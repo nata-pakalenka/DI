@@ -1,0 +1,17 @@
+{
+    "name": "zebra/di",
+    "description": "test di project",
+    "type": "library",
+    "require": {
+        "psr/container": "^1.0",
+        "phpunit/phpunit": "^8.2"
+    },
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Natallia Pakalenka",
+            "email": "natallia.pakalenka@aventusgroup.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
