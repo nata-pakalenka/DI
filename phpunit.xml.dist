@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         backupGlobals="false"
+         colors="true"
+         >
+<!--    <php>-->
+<!--        <ini name="error_reporting" value="-1" />-->
+<!--        <server name="KERNEL_CLASS" value="AppKernel" />-->
+<!--        <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak" />-->
+<!--    </php>-->
+
+    <testsuites>
+        <testsuite name="Unit">
+            <directory>./tests/Unit</directory>
+        </testsuite>
+
+        <testsuite name="Acceptance">
+            <directory suffix=".phpt">./tests/Acceptance</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>src</directory>
+        </whitelist>
+    </filter>
+</phpunit>

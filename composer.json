@@ -2,15 +2,29 @@
     "name": "zebra/di",
     "description": "test di project",
     "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Zebra\\DI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zebra\\DI\\Test\\": "test/"
+        }
+    },
     "require": {
-        "psr/container": "^1.0",
-        "phpunit/phpunit": "^8.2"
+        "psr/container": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2",
+        "phpstan/phpstan": "^0.11.12",
+        "squizlabs/php_codesniffer": "*"
     },
     "license": "GPL-3.0",
     "authors": [
         {
             "name": "Natallia Pakalenka",
-            "email": "natallia.pakalenka@aventusgroup.com"
+            "email": "natallia.pakalenka@gmail.com"
         }
     ],
     "minimum-stability": "stable"
